@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./assets/styles/produtos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/71b0b1d0cc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>TecnoGlass</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/"><img src="./assets/img/logoWhite.png" alt="TecnoGlass Logo"></a>
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/#about">Quem somos</a>
+            <a href="/#services">Serviços</a>
+            <a href="/#method">Metodologia</a>
+            <a href="/produtos">Produtos</a>
+        </nav>
+        <a target="_blank"
+            href="https://api.whatsapp.com/send?phone=5511960589667&text=Olá, gostaria de mais informações."
+            class="cta-button">Fale conosco!</a>
+
+        <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <div id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about">Quem somos</a></li>
+            <li><a href="/#services">Serviços</a></li>
+            <li><a href="/#method">Metodologia</a></li>
+            <li><a href="/produtos">Produtos</a></li>
+        </nav>
+    </div>
+    <div class="customs-clearance-section">
+        <div class="left" style="padding-inline: 50px;">
+            <h2 class="h2-title">Mais de 300 modelos<br/> de reservatórios</h2>
+            <p class="text-dark-effect max-w-2_3" style="margin-block: 20px !important;">A Tecnoglass trabalha com a linha premium de reservatórios contendo capacidade de 2.000 litros a 50.000 litros</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=5511960589667&text=Olá, gostaria de solicitar um orçamento de reservatórios." class="customer-hub">Solicitar orçamento</a>
+                <!-- <button class="get-quotation">Get Quotation</button> -->
+            </div>
+        </div>
+        <div class="right" style="margin-left: -50px;">
+            <img src="./assets/img/reserv-branco (1).jpeg" alt="Ship Image">
+        </div>
+    </div>
+    <div class="stats-section">
+        <div class="stat">
+            <h2><i class="fa-solid fa-shield-halved"></i></h2>
+            <p>Extra reforçados</p>
+        </div>
+        <div class="stat">
+            <h2><i class="fa-solid fa-hammer"></i></h2>
+            <p>Revestimento interno com Gel iso branco</p>
+        </div>
+        <div class="stat">
+            <h2><i class="fa-regular fa-rectangle-list"></i></h2>
+            <p>Placa de identificação</p>
+        </div>
+        <div class="stat">
+            <h2><i class="fa-solid fa-book"></i></h2>
+            <p>Manual de instrução e procedimentos de instalação</p>
+        </div>
+        <div class="stat">
+            <h2><i class="fa-regular fa-star"></i></h2>
+            <p>Selo de qualidade</p>
+        </div>
+    </div>
+    <div class="experience-section">
+        <div class="left">
+            <img src="./assets/img/reserv-azul.jpeg" alt="Warehouse Image">
+        </div>
+        <div class="right" style="padding-right: 60px;">
+            <h2 class="h2-title">Alto Padrão de Qualidade</h2>
+            <p class="text-dark-effect">Nossos reservatórios são fabricados com os melhores materiais disponíveis no mercado. Isso assegura uma durabilidade excepcional e uma resistência de alto nível, proporcionando soluções que atendem perfeitamente às suas necessidades e expectativas.</p>
+            <button class="contact-quote">Nos envie um e-mail</button>
+        </div>
+    </div>
+    <div class="commercial-value-section">
+        <div class="left" style="padding-left: 50px;">
+            <!-- <p class="text-dark-effect">Reservatórios TecnoGlass: Qualidade superior para segurança, durabilidade e eficiência.</p> -->
+            <h2 class="h2-title">Resistência</h2>
+            <p class="text-dark-effect">Ter um reservatório resistente é essencial para garantir a segurança e a durabilidade no armazenamento de água, além que minimizam o risco de vazamentos e rupturas, protegendo o investimento a longo prazo. Além disso, um reservatório robusto assegura que a água armazenada permaneça limpa e segura para uso, evitando contaminações. Investir em um reservatório resistente é fundamental para a eficiência operacional e a sustentabilidade do fornecimento de água.</p>
+        </div>
+        <div class="right">
+            <img src="./assets/img/reserv-cinza.jpeg" alt="Trucks Image">
+        </div>
+    </div>
+    <!-- <div class="experience-section" style="margin-bottom: 6%;">
+        <div class="left">
+            <img src="img/reserv-vermelho.jpeg" alt="Warehouse Image" style="width: 65%; padding-left: 100px;">
+        </div>
+        <div class="right" style="padding-right: 60px;">
+            <h2 class="h2-title">Reservatórios de Qualidade</h2>
+            <p class="text-dark-effect">Nossos reservatórios são fabricados com os melhores materiais disponíveis no mercado. Isso assegura uma durabilidade excepcional e uma resistência de alto nível, proporcionando soluções que atendem perfeitamente às suas necessidades e expectativas.</p>
+            <button class="contact-quote">Nos envie um e-mail</button>
+        </div>
+    </div> -->
+    <div class="slider-section">
+        <h2>ALGUNS RESERVATÓRIOS DA NOSSA LINHA PREMIUM</h2>
+        <div class="slider-container" style="margin-bottom: 8%;">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="slide"><img src="./assets/img/balca.jpeg" alt="Photo 1"></div>
+                    <div class="slide"><img src="./assets/img/reserv-vermelho.jpeg" alt="Photo 2"></div>
+                    <div class="slide"><img src="./assets/img/balca3.jpeg" alt="Photo 3"></div>
+                    <div class="slide"><img src="./assets/img/balca4azul.jpeg" alt="Photo 4"></div>
+                    <div class="slide"><img src="./assets/img/balca2.jpeg" alt="Photo 5"></div>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+    
+    <div class="slider-section-img" style="background-color: white; padding-top: 0;">
+        <span style="font-weight: 700; font-size: 20px; line-height: 1.2; color: #c8c8c8; text-transform: uppercase;">Especifições</span>
+        <h2 style="text-transform: uppercase;">Tabela de medidas</h2>
+        <div class="slider-div-img" style="display: flex; padding-left: 8%; padding-right: 8%;">
+            <div class="slider-container-img">
+                <img src="./assets/img/medidasTanque.jpeg" style="background-size: cover; background-position: center; width: 100%; max-width: 100%;"/>
+            </div>
+            <div class="slider-container-img">
+                <img src="./assets/img/medidasTanque.png" style="background-size: cover; background-position: center; width: 100%; max-width: 100%;"/>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container" style="margin-bottom: 60px;">
+        <div class="about-us-section">
+            <div class="left">
+                <img src="./assets/img/water_tank.png" alt="Imagem Contato">
+            </div>
+            <div class="right">
+                <h3>Contate-nos</h3>
+                <h2>Entre em Contato Conosco</h2>
+                <p class="text-light-effect">Para consultar valores ou mais informações sobre nossos serviços, por favor, entre em contato conosco. Estamos aqui para ajudar e fornecer as melhores soluções adaptadas às suas necessidades.</p>
+                <p class="text-light-effect">Você pode nos contatar por e-mail em <a href="mailto:tecnoglass@tecnoglassbrasil.com.br" class="contact-link">tecnoglass@tecnoglassbrasil.com.br</a> ou ligar para <b>(14) 99811-8688</b>.</p>
+                <!-- <a href="mailto:example@example.com" class="contact-button">Enviar Email</a> -->
+            </div>
+        </div>
+    </div>
+
+    <pre-footer-logo>
+        <div class="div-logo">
+            <div class="logo-footer">
+                <img src="./assets/img/logoCinza.png" alt="Logo TecnoGlass">
+            </div>
+        </div>
+    </pre-footer-logo>
+    <footer class="footer">
+        <div class="teste">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="/#home">Home</a>
+                    <a href="/#about">Quem somos</a>
+                    <a href="/#services">Serviços</a>
+                    <a href="/#method">Metodologia</a>
+                    <a href="/produtos">Produtos</a>
+                </nav>
+            </div>
+            <div class="footer-center">
+                <div class="email" style="padding-bottom: 20px;">
+                    <p><b>EMAIL</b></p>
+                    <p><a href="mailto:tecnoglass@tecnoglassbrasil.com.br">tecnoglass@tecnoglassbrasil.com.br</a></p>
+                </div>
+                <div class="endereco">
+                    <p><b>ENDEREÇO</b></p>
+                    <p>Rua Major Matheus, 535</p>
+                    <p>Vila dos Labradores</p>
+                    <p>Botucatu/SP</p>
+                </div>
+            </div>
+            <div class="footer-center">
+                <div class="contato" style="padding-bottom: 20px;">
+                    <p><b>TELEFONE DE CONTATO</b></p>
+                    <p>(11) 96058-9667</p>
+                </div>
+                <p><b>SIGA NOSSAS REDES SOCIAIS</b></p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/tecnoglassbrasil/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/103921493/admin/feed/posts/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61561954674521&mibextid=LQQJ4d" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5511960589667&text=Olá, gostaria de mais informações." target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="img-side" style="display: flex;">
+                    <img src="./assets/img/tecnoglass-logo.png" alt="TecnoGlass Logo">
+                    <img src="./assets/img/cert.png">
+                </div>
+                <p>CNPJ 51.699.616/0001-33</p>
+            </div>
+        </div>
+        <img class="footer-leaf" src="./assets/img/grass.png" alt="Folha">
+    </footer>
+    <pos-footer class="pos-footer">
+        <div class="direitos">
+            <p>© 2024 Tecnoglass - Todos os direitos reservados</p>
+        </div>
+    </pos-footer>
+    <script src="./assets/js/produtos.js"></script>
+    <script src="./assets/js/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    <title>TecnoGlass</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script src="https://kit.fontawesome.com/71b0b1d0cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="/"><img src="./assets/img/logoWhite.png" alt="TecnoGlass Logo"></a>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">Quem somos</a>
+            <a href="#services">Serviços</a>
+            <a href="#method">Metodologia</a>
+            <a href="/produtos">Produtos</a>
+        </nav>
+        <a target="_blank"
+            href="/enviarEmail"
+            class="cta-button">Enviar E-mail</a>
+
+        <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <div id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Quem somos</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#method">Metodologia</a></li>
+            <li><a href="/produtos">Produtos</a></li>
+        </nav>
+    </div>
+
+    <section>
+        <div>
+            <section class="hero" id="home">
+                <div class="container relative z-upper">
+                    <div>
+                        <h1 class="font-bold">TECNOLOGIA NA <span class="highlight">RECUPERAÇÃO EM RESERVATÓRIOS</span>
+                            DE PRFV</h1>
+                    </div>
+                    <div class="flex-center flex-col">
+                        <a target="_blank" class="hero-btn"
+                            href="https://api.whatsapp.com/send?phone=5511960589667&text=Olá, gostaria de mais informações.">Fale
+                            conosco</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- <img class="header-leaf" src="img/grass.png" alt="Folha"> -->
+    <div class="margin-all">
+        <section class="" id="about">
+            <div class="content-section">
+                <div class="text">
+                    <div class="title">
+                        <h2>SOBRE NÓS</h2>
+                    </div>
+                    <h4>Especialistas em Recuperação de Reservatórios de PRFV e Diagnósticos com Engenharia Consultiva
+                    </h4>
+                    <p>A Tecnoglass é especialista na recuperação de reservatórios de PRFV (Plástico Reforçado em Fibra
+                        de Vidro), oferecendo mais de 30 anos de experiência. Devido à precariedade dos serviços
+                        disponíveis e a produtos de baixa qualidade no mercado, desenvolvemos uma técnica exclusiva para
+                        reformar, recuperar e reestruturar reservatórios <b>sem a necessidade de retirar a água do
+                            interior</b>, não causando o desconforto com o desabastecimento de agua enquanto o serviço
+                        esta sendo executado, aumentando sua vida útil em mais de 5 anos.</p>
+                    <p>Nossos técnicos especializados realizam inspeções detalhadas, medições, ensaios e testes,
+                        incluindo análise de dureza, tração, flexão e teor de fibra. Com esses dados, emitimos um laudo
+                        completo que identifica todas as inconformidades e riscos do reservatório.</p>
+                    <p>Com base nesse laudo, oferecemos um plano de recuperação personalizado e um orçamento detalhado,
+                        garantindo a solução mais eficaz para prolongar a vida útil dos seus reservatórios e assegurar
+                        sua segurança e funcionalidade.</p>
+                </div>
+                <img class="img1" src="./assets/img/montagem.jpeg" alt="Imagem sobre nós">
+            </div>
+        </section>
+    </div>
+
+    <section class="services-section" id="services">
+        <div class="">
+            <div class="content-section-service">
+                <img class="img2" src="./assets/img/ajuste.jpeg" alt="Imagem serviços">
+                <div class="text">
+                    <h2>SERVIÇOS TECNOGLASS</h2>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                    <h3>Recuperação de reservatórios colapsados</h3>
+                    <ul>
+                        <li>Reforços estruturais preventivos</li>
+                        <li>Laudo Pericial</li>
+                        <li>Laudo técnico</li>
+                        <li>Limpeza e higienização de reservatórios</li>
+                        <li>Manutenção preventiva</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="margin-all" style="background-color: #FAFAFA;"> -->
+    <section class="values-section">
+        <div class="values-container">
+            <div class="value-card">
+                <div class="icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <div class="content">
+                    <h3><b>Missão:</b></h3>
+                    <p>Proporcionar soluções de alta qualidade na recuperação de reservatórios, garantindo a
+                        continuidade do fornecimento de água e aumentando a vida útil.</p>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="icon">
+                    <i class="fa-regular fa-flag"></i>
+                </div>
+                <div class="content">
+                    <h3><b>Visão:</b></h3>
+                    <p>Ser reconhecida como líder em recuperação e limpeza de reservatórios, com excelência, técnica e
+                        pela capacidade de inovar em um mercado carente de soluções.</p>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="icon">
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="content">
+                    <h3><b>Valores:</b></h3>
+                    <p>Compromisso com a qualidade; Inovação; Respeito ao meio ambiente; Integridade nas relações;
+                        Satisfação total do cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <img class="middle-leaf" src="img/grass.png" alt="Folha"> -->
+
+    <section class="" style="margin-top: 40px; margin-bottom: 30px;">
+        <div class="" style="margin-inline: 8%; margin-bottom: 60px;">
+            <div class="pretitle">
+                Antes/Depois</div>
+            <div class="title" style="font-weight: 700; font-size: 30px; line-height: 1.2;">Recuperação de
+                <br />Reservatórios Danificados
+            </div>
+        </div>
+        <div>
+            <div id="swiper" class="swiper" style="margin-left: 8%; margin-right: 8%;">
+                <div class="swiper-wrapper" style="padding-top: 3px;">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="flex flex-col"
+                            style="background-color: #fff; padding: 20px; box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;">
+                            <div class="flex justify-between" style="margin-bottom: 20px;">
+                                <div class="swiper-title">Recuperação do Reservatório</div>
+                                <div></div>
+                            </div>
+                            <div class="flex flex-grow" style=" gap: 20px;">
+                                <div class="flex-1 relative">
+                                    <img class="swiper-img" src="./assets/img/tanque-antes.jpeg" alt="">
+                                    <div class="embed">Antes</div>
+                                </div>
+                                <div class="flex-1 relative">
+                                    <img class="swiper-img" src="./assets/img/tanque-depois.jpeg" alt="">
+                                    <div class="embed">Depois</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col"
+                            style="background-color: #fff; padding: 20px; box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;">
+                            <div class="flex justify-between" style="margin-bottom: 20px;">
+                                <div class="swiper-title">Reservatório colapsado no meio do tanque</div>
+                                <div></div>
+                            </div>
+                            <div class="flex flex-grow" style=" gap: 20px;">
+                                <div class="flex-1 relative">
+                                    <img class="swiper-img" src="./assets/img/tanque3-antes.jpeg" alt="">
+                                    <div class="embed">Antes</div>
+                                </div>
+                                <div class="flex-1 relative">
+                                    <img class="swiper-img" src="./assets/img/tanque3-depois.jpeg" alt="">
+                                    <div class="embed">Depois</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col"
+                            style="background-color: #fff; padding: 20px; box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;">
+                            <div class="flex justify-between" style="margin-bottom: 20px;">
+                                <div class="swiper-title">Recuperação do Reservatório</div>
+                                <div></div>
+                            </div>
+                            <div class="flex flex-grow" style=" gap: 20px;">
+                                <div class="flex-1 relative">
+                                    <img class="swiper-img" src="./assets/img/tanque2-antes.jpeg" alt="">
+                                    <div class="embed">Antes</div>
+                                </div>
+                                <div class="flex-1 relative">
+                                    <img class="swiper-img" src="./assets/img/tanque2-depois.jpeg" alt="">
+                                    <div class="embed">Depois</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col"
+                            style="background-color: #fff; padding: 20px; box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;">
+                            <div class="flex justify-between" style="margin-bottom: 20px;">
+                                <div class="swiper-title">Reservatório colapsado na parte inferior</div>
+                                <div></div>
+                            </div>
+                            <div class="flex flex-grow" style=" gap: 20px;">
+                                <div class="flex-1 relative">
+                                    <img class="swiper-img" src="./assets/img/tanquebaixo-antes.jpeg" alt="">
+                                    <div class="embed">Antes</div>
+                                </div>
+                                <div class="flex-1 relative">
+                                    <img class="swiper-img" src="./assets/img/tanquebaixo-depois2.jpeg" alt="">
+                                    <div class="embed">Depois</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-center relative">
+                    <div class="swiper-button swiper-button-prev swiper-button-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 21 21">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                d="M7.499 6.497L3.5 10.499l4 4.001m9-4h-13" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button swiper-button-next swiper-button-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 21 21">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                d="m13.5 6.497l4 4.002l-4 4.001m-9-4h13" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="margin-all"> -->
+        <section class="" id="about" style="padding: 3%; padding-top: 5px; padding-bottom: 5px; background-color: #00254f;">
+            <div class="content-section">
+                <div class="text">
+                    <div class="title">
+                        <span style="font-weight: 700; font-size: 20px; line-height: 1.2; color: #ffffff; text-transform: uppercase;">Serviços</span>
+                        <h3 style="font-size: 34px; letter-spacing: -0.025em; text-align: left; font-weight: 600; line-height: 1.2; margin-bottom: 20px; margin-top: 0; color: #ffffff;">
+                            Reforço  Completo de Estrutura
+                        </h3>
+                        <hr style="color: #ffff; width: 48%;">
+                    </div>
+                    <h4 style="color: #a3d400;">Além de tudo prestamos serviços reforçando completamente os reservatórios, aumentando significativamente sua vida útil e ajudando você a diminuir os gastos.</h4>
+                    <p style="color: #ffffff;"> 
+                        Utilizamos materiais de alta qualidade e técnicas avançadas para garantir que cada reservatório esteja mais robusto e durável, proporcionando segurança e eficiência a longo prazo.
+                        <br>A recuperação e reforço de reservatórios existentes é uma solução muito mais econômica comparada à aquisição de um novo, permitindo uma significativa redução de custos para nossos clientes.
+                    </p>
+                </div>
+                <img class="img1" src="./assets/img/slide (5).jpeg" alt="Imagem sobre nós" style="width: 450px; height: 490px; box-shadow: 16px 16px #ffffff;">
+            </div>
+        </section>
+        
+    <!-- </div> -->
+
+    <!-- </div> -->
+    <!-- <section class="maintenance-section">
+        <div class="maintenance-content">
+            <h2>Limpeza e higienização de reservatórios</h2>
+            <p>A Tecnoglass não só se especializa na recuperação de reservatórios de PRFV, mas também oferece serviços
+                de limpeza e higienização, garantindo a máxima qualidade e segurança para seus reservatórios.</p>
+            <div class="services">
+                <h3><i class="fa-solid fa-wrench"></i> Serviços:</h3>
+                <p>As manutenções podem ser feitas “in loco” ou nas instalações da Carbofibras, dependendo das
+                    necessidades do cliente.</p>
+                <ul>
+                    <li>Restauração da Barreira de corrosão;</li>
+                    <li>Instalação de acessórios;</li>
+                    <li>Reparo de danos físicos;</li>
+                    <li>Instalação de tanques, tubos e conexões;</li>
+                    <li>Vistoria técnica;</li>
+                </ul>
+            </div>
+        </div>
+        <div class="maintenance-slide">
+             <div id="swiper2" class="swiper-container" style="min-width: 0;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-slide"><img src="img/slide (1).jpeg" alt="Imagem 1"></div>
+                    <div class="swiper-slide slider-slide"><img src="img/slide (5).jpeg" alt="Imagem 2"></div>
+                    <div class="swiper-slide slider-slide"><img src="img/slide (4).jpeg" alt="Imagem 3"></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="cleaner" style="margin-block: 60px;">
+        <div
+            style="display: flex; align-items: center; justify-content: center; flex-direction: column; margin-bottom: 50px;">
+            <span style="font-weight: 700; font-size: 20px; line-height: 1.2; color: #8C8F9E; text-transform: uppercase;">Serviços</span>
+            <h3
+                style="font-size: 34px; letter-spacing: -0.025em; text-align: center; font-weight: 700; line-height: 1.2; margin-bottom: 20px;">
+                Limpeza e higienização de reservatórios</h3>
+            <span
+                style="color: rgba(0, 0, 0, .7); font-weight: 500; letter-spacing: -0.025em; font-size: 22px; text-align: center; max-width: 1200px; margin-bottom: 20px;">A
+                A Tecnoglass não apenas é especializada na recuperação de PRFV, mas também oferece serviços de limpeza e higienização, garantindo a manutenção ideal e a longevidade dos seus sistemas de armazenamento.</span>
+        </div>
+        <div class="container" style="display: flex; gap: 20px;">
+            <div style="flex: 1.8;">
+                <div>
+                    <img style="border-radius: 2px; width: 100%; height: 550px; object-fit: cover; box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;" 
+                    src="../assets/img/limpezaHome.jpeg" alt="">
+                    <!-- <span>Serviços de limpeza:</span>
+                    <div>
+
+                    </div> -->
+                </div>
+                <!-- <div>
+                    <div>
+
+                    </div>
+                </div> -->
+            </div>
+            <div class="flex-container gallery_content">
+                <div class="gallery">
+                    <div class="gallery__item gallery__item--1 item-1" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                        <div class="item-1-header">
+                            <span class="item-1-header-text">+30</span>
+                        </div>
+                        <div class="item-1-content">
+                            <span class="item-1-content-text">Anos de</span>
+                            <span class="item-1-content-text">Experiência</span>
+                            <span class="item-1-content-text">No Mercado</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item gallery__item--2 item-2" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                        <div class="item-2-header">
+                            <svg class="item-2-header-svg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="currentColor" d="M4 22v-5.866q0-1.835 1.294-3.129t3.129-1.294h1.289V3.634q0-.674.462-1.154q.463-.48 1.134-.48h1.384q.672 0 1.134.48q.463.48.463 1.154v8.078h1.269q1.843 0 3.143 1.293Q20 14.3 20 16.135V22zm1-1h2.75v-3.52q0-.212.144-.355t.357-.144t.356.143t.143.357V21h2.75v-3.52q0-.212.144-.355t.357-.144t.356.143t.143.357V21h2.75v-3.52q0-.212.144-.355t.357-.144t.356.143t.143.357V21H19v-4.866q0-1.442-1.004-2.432t-2.438-.99H8.423q-1.426 0-2.424.998Q5 14.708 5 16.134zm8.289-9.288V3.634q0-.27-.174-.452Q12.942 3 12.692 3h-1.384q-.25 0-.424.183q-.173.183-.173.452v8.077zm0 0h-2.577z"/></svg>
+                        </div>
+                        <div class="item-2-content">
+                            <span class="item-2-content-text">Limpeza com</span>
+                            <span class="item-2-content-text">Alto Padrão</span>
+                            <span class="item-2-content-text">De qualidade</span>
+                        </div>
+                    </div>
+                    <!-- <div class="gallery__item gallery__item--3" style="background-color: rgba(0, 0, 0, .1); border-radius: 8px;">
+                    </div> -->
+                    <div class="gallery__item gallery__item--4 item-4" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                        <div class="item-4-header">
+                            <span class="item-4-header-text">4</span>
+                            <div class="item-4-header-content">
+                                <span class="item-4-header-description">Doenças provocadas pela falta de limpeza na<br/> <b>Caixa D'Água</b></span>
+                            </div>
+                        </div>
+                        <div class="item-4-content">
+                            <div class="item-4-content-row">
+                                <div class="item-4-content-icon">1</div>
+                                <span class="item-4-content-text">Cólera</span>
+                            </div>
+                            <div class="item-4-content-row">
+                                <div class="item-4-content-icon">2</div>
+                                <span class="item-4-content-text">Amebíase</span>
+                            </div>
+                            <div class="item-4-content-row">
+                                <div class="item-4-content-icon">3</div>
+                                <span class="item-4-content-text">Hepatite A</span>
+                            </div>
+                            <div class="item-4-content-row">
+                                <div class="item-4-content-icon">4</div>
+                                <span class="item-4-content-text">Giardiáse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class=""
+        style="padding-inline: 20px; background-color: #00254f;background-image: radial-gradient(circle at center center, #fefeff, #00254f), repeating-radial-gradient(circle at center center, #fefeff, #fefeff, 23px, transparent 46px, transparent 23px);background-blend-mode: multiply; padding-block: 60px; color: white; margin-top: 8%;">
+        <div
+            style="display: flex; flex-direction: column; gap: 10px; justify-content: center; align-items: center; text-align: center;">
+            <span style="font-size: 20px; color: rgba(255, 255, 255, .6);">limpeza de caixa d’água</span>
+            <h3 style="font-size: 32px;">Não coloque em <span>risco a saúde</span>,<br /> realize limpeza a cada 6
+                meses.</h3>
+            <span style="font-size: 20px; color: rgba(255, 255, 255, .6);">– Conforme Lei Municipal 6673 –</span>
+        </div>
+    </section>
+
+    <section class="methodology" id="method">
+        <div class="methodology-deco-1">
+            <img class="footer-leaf" src="../assets/img/grass.png" alt="Folha">
+        </div>
+        <!-- <div class="methodology-deco-2">
+            <img class="footer-leaf" src="img/grass.png" alt="Folha">
+        </div> -->
+        <h2 class="title">Metodologia Empregada</h2>
+        <div class="methodology-columns">
+            <div class="methodology-column">
+                <h3>2.1 Ensaio virtual</h3>
+                <ul>
+                    <li>Inspeção de qualidade de laminação;</li>
+                    <li>Condições aparente;</li>
+                    <li>Inspeção de foto contraste;</li>
+                    <li>Conformidade de distribuição do laminado;</li>
+                    <li>Aspectos construtivos gerais;</li>
+                    <li>Reforços de transições (fundo x costado x teto);</li>
+                    <li>Geometria;</li>
+                    <li>Homogeneização;</li>
+                    <li>Integridade do laminado;</li>
+                    <li>Construção operacional;</li>
+                    <li>Acessos e derivações;</li>
+                    <li>Rigidez estrutural.</li>
+                </ul>
+            </div>
+            <div class="methodology-column">
+                <h3>2.2 Ensaio dimensional</h3>
+                <ul>
+                    <li>Aspectos construtivos específicos;</li>
+                    <li>Acoplamento e acessórios;</li>
+                    <li>Respiros e sistemas de ventilação;</li>
+                    <li>Derivação de drenagem e extravasão;</li>
+                    <li>Esforços mecânicos aparentes;</li>
+                    <li>Suporte estrutural;</li>
+                    <li>Aspectos geométricos;</li>
+                    <li>Peças e componentes;</li>
+                    <li>Deformações aparentes;</li>
+                    <li>Conformação geométrica;</li>
+                    <li>Medição de espessura.</li>
+                </ul>
+            </div>
+            <div class="methodology-stack">
+                <div class="methodology-column">
+                    <h3>2.3 Ensaios de revestimento</h3>
+                    <ul>
+                        <li>Pegajosidade / reação química a acetona;</li>
+                        <li>Verificação de barreira química.</li>
+                    </ul>
+                </div>
+                <div class="methodology-column">
+                    <h3>2.3 Testes laboratoriais (IPT)</h3>
+                    <ul>
+                        <li>Tração;</li>
+                        <li>Flexão;</li>
+                        <li>Dureza;</li>
+                        <li>Potabilidade.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+
+    <!-- <section class="content2" style="margin-bottom: 5%;">
+        <div class="content-section2">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisi.</p>
+            </div>
+        </div>
+    </section> -->
+    <!-- <div class="container" style="margin-bottom: 60px;
+    margin-top: 100px;">
+        <div class="about-us-section">
+            <div class="left">
+                <img src="img/water_tank.png" alt="Imagem Contato">
+            </div>
+            <div class="right">
+                <h3>Contate-nos</h3>
+                <h2>Entre em Contato Conosco</h2>
+                <p class="text-light-effect">Para consultar valores ou mais informações sobre nossos serviços, por favor, entre em contato conosco. Estamos aqui para ajudar e fornecer as melhores soluções adaptadas às suas necessidades.</p>
+                <p class="text-light-effect">Você pode nos contatar por e-mail em <a href="mailto:tecnoglass@tecnoglassbrasil.com.br" tecnoglass@tecnoglassbrasil.com.brnk">tecnoglass@tecnoglass.com.br</a> ou ligar para (14) 99811-8688.</p>
+                 <a href="mailto:example@example.com" class="contact-button">Enviar Email</a> -->
+            </div>
+        </div>
+    </div> 
+    <pre-footer-logo>
+        <div class="div-logo">
+            <div class="logo-footer">
+                <img src="./assets/img/logoCinza.png" alt="Logo TecnoGlass">
+            </div>
+        </div>
+    </pre-footer-logo>
+    <footer class="footer">
+        <div class="teste">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">Quem somos</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#method">Metodologia</a>
+                    <a href="/produtos">Produtos</a>
+                </nav>
+            </div>
+            <div class="footer-center">
+                <div class="email" style="padding-bottom: 20px;">
+                    <p><b>EMAIL</b></p>
+                    <p><a href="mailto:tecnoglass@tecnoglassbrasil.com.br">tecnoglass@tecnoglassbrasil.com.br</a></p>
+                </div>
+                <div class="endereco">
+                    <p><b>ENDEREÇO</b></p>
+                    <p>Rua Major Matheus, 535</p>
+                    <p>Vila dos Labradores</p>
+                    <p>Botucatu/SP</p>
+                </div>
+            </div>
+            <div class="footer-center">
+                <div class="contato" style="padding-bottom: 20px;">
+                    <p><b>TELEFONE DE CONTATO</b></p>
+                    <p>(11) 96058-9667</p>
+                </div>
+                <p><b>SIGA NOSSAS REDES SOCIAIS</b></p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/tecnoglassbrasil/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/103921493/admin/feed/posts/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61561954674521&mibextid=LQQJ4d" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5511960589667&text=Olá, gostaria de mais informações." target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="img-side">
+                    <img src="./assets/img/tecnoglass-logo.png" alt="TecnoGlass Logo">
+                    <img src="./assets/img/cert.png">
+                </div>
+                <p>CNPJ 51.699.616/0001-33</p>
+            </div>
+        </div>
+        <img class="footer-leaf" src="./assets/img/grass.png" alt="Folha">
+    </footer>
+    <pos-footer class="pos-footer">
+        <div class="direitos">
+            <p>© 2024 Tecnoglass - Todos os direitos reservados</p>
+        </div>
+    </pos-footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/header.js"></script>
+</body>
+
+</html>

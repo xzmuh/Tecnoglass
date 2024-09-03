@@ -1,0 +1,236 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do header */
+.header {
+    background-color: rgba(0, 37, 79, 0.8);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+    backdrop-filter: blur(7px);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+    z-index: 999999999 !important;
+}
+
+.header img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin-left: 2%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.cta-button {
+    background-color: #00aeef;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 2%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+}
+
+/* Estilo do formulário */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #002a5b;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00aeef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0098d1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        border-top: 1px solid #ffffff33;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .header.open .nav-links {
+        display: flex;
+    }
+}
+
+/* Estilo do corpo */
+body {
+    background-color: #edf1f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Adicional para header fixo */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Espaço para o header fixo */
+.form-container {
+    margin-top: 100px;
+}
+
+.hamburger {
+    display: none; /* Oculta inicialmente em telas maiores */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: transform 0.3s;
+}
+
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    display: none;
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    background-color: #00254f;
+    width: 100%;
+    left: 0px;
+}
+
+.mobile-menu ul {
+    padding-top: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 8px;
+}
+
+.mobile-menu ul li {
+    list-style: none;
+    color: #fff;
+}
+.mobile-menu ul li a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Mostra o ícone do hamburguer */
+    }
+
+    .hamburger.open .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.open .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
